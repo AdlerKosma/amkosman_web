@@ -71,7 +71,7 @@
                 box.className = "box";
 
                 text.className = "text-header";
-                text.innerHTML = "welcome to the live stream <3 USE HEADPHONES FOR 360° SOUND <3 live at 20:00 GMT+1";
+                text.innerHTML = "nothing live to show atm. come back soon. this is a just lil taste.";
 
                 div.innerHTML = document.getElementById(`${video}`).innerHTML;
                 div.className = "video";
@@ -90,6 +90,7 @@
                 let text1 = document.createElement("p");
                 let text2 = document.createElement("p");
                 let text3 = document.createElement("p");
+                let text4 = document.createElement("p");
                 let pic = document.createElement("img")
 
                 pic.setAttribute("src", "img/adler.jpg");
@@ -104,11 +105,16 @@
                 text1.className = "text-header";
                 text1.innerHTML = "Electroacoustic composer, performer and vocalist AMKosman, aka Adele marcia Kosman, explores sound and space mainly through field recordings, synthesis, algorithmic composition and vocals, along with careful audio editing. Their latest pieces embrace concepts of emotional relationships to time, chopping and glitch, as well as formlessness and intense turbulence. Here follows a short bio:";
                 text2.className = "text-body";
-                text2.innerHTML = "The spring of 2020 I completed a bachelor degree in electro acoustic composition at the royal college of music in Stockholm and Universität der Künste in Berlin. The final year of this degree I studied alongside Kirsten Resee (UdK) and Henrik Frisk (KMH), who have supported me in building tools for live processing and live composing in SuperCollider. This work was accompanied by my thesis titled Livekonserten som kompositionsverktyg i elektroakustisk musik (The Live Concert as a Compositional Tool in Electro Acoustic Music), where I expressed and explored the wish to fully cater to the live medium when composing for just that – live, in electronic music. During my years studying composition I have written acousmatic pieces for surround sound, music for saxophone and tape, a sound installation for Stockholm Konst Ljudbänken and a piece for organ and vocals, which I myself participated in as a vocalist. More information about these works can be found in WORKS. </br></br>Alongside my compositional work I am since year 2020 involved in Konstmusiksystrar as a board member, while also doing hands on work in various projects initiated by members of the network. Year 2021 I was elected chair person of the network. </br></br>Before starting my endeavour studying and composing art music I was active in the electronic experimental pop scene releasing music as AMKosman. Prior to that I was a vocalist and songwriter in the electronic pop group For BDK. Together with the late Marcus Borrman I released a record with Warner Music Sweden, toured Europe and Sweden and performed live on Swedish Radio.</br></br>xo Adler </br></br></br></br></br></br></br></br></br>"
+                text2.innerHTML = "The spring of 2020 I completed a bachelor degree in electro acoustic composition at the royal college of music in Stockholm and Universität der Künste in Berlin. The final year of this degree I studied alongside Kirsten Resee (UdK) and Henrik Frisk (KMH), who have supported me in building tools for live processing and live composing in SuperCollider. This work was accompanied by my thesis titled Livekonserten som kompositionsverktyg i elektroakustisk musik (The Live Concert as a Compositional Tool in Electro Acoustic Music), where I expressed and explored the wish to fully cater to the live medium when composing for just that – live, in electronic music. During my years studying composition I have written acousmatic pieces for surround sound, music for saxophone and tape, a sound installation for Stockholm Konst Ljudbänken and a piece for organ and vocals, which I myself participated in as a vocalist. More information about these works can be found in WORKS. </br></br>Alongside my compositional work I am since year 2020 involved in Konstmusiksystrar as a board member, while also doing hands on work in various projects initiated by members of the network. Year 2021 I was elected chair person of the network. </br></br>Before starting my endeavour studying and composing art music I was active in the electronic experimental pop scene releasing music as AMKosman. Prior to that I was a vocalist and songwriter in the electronic pop group For BDK. Together with the late Marcus Borrman I released a record with Warner Music Sweden, toured Europe and Sweden and performed live on Swedish Radio.</br></br>xo Adler </br></br></br></br>"
 
                 text3.className = "text-body";
                 text3.style.textAlign = "right";
-                text3.innerHTML = "amkosman.xyz credit: </br></br>Joakim Aronsson – Design</br>Kathrine Skibsted – Video</br>Anto Azzopardi – Photo</br>Adele Kosman – Code</br></br></br></br>";
+                text3.innerHTML = "amkosman.xyz credit: </br></br>Joakim Aronsson – Design</br>Kathrine Skibsted – Video</br>Anto Azzopardi – Photo</br>Adele Kosman – Code</br></br>";
+
+                text4.className = "text-body";
+                text4.style.textAlign = "right";
+                text4.innerHTML = "amkosman.xyz contact: </br></br>adele.kosman[@]gmail.com on mail </br>@adelemarcia on IG";
+
                 centerElement(box);
                 addClose(box);
 
@@ -117,17 +123,26 @@
                 box.appendChild(text1);
                 box.appendChild(text2);
                 box.appendChild(text3);
-                box.appendChild(pic)
-                box.appendChild(pic)
+                box.appendChild(text4);
+                box.appendChild(pic);
+
             };
 
             function worksMenu() {
                 let box = document.createElement("div");
                 let counter_text = 0;
                 let text_title = [
-                    "SOUND", "2020", "Degree concert 'Give/Take/in concert'", "Lead You Home", "2019", "the mean of give and take", "now that you are done: Formless", "EMiT", "2018", "if it were for me you'd piece me up", "dancemusic",
-                    "INSTALLATION", "2021", "'WAVE' in collaboration with Fathia Mohidin", "2019", "For Dancemusic You’d Emit to Formless",
-                    "CONCERTS", "2020", ""
+                    "SOUND",
+                    "2020", "Degree concert 'Give/Take/in concert'", "Lead You Home",
+                    "2019", "the mean of give and take", "now that you are done: Formless", "EMiT", "2018", "if it were for me you'd piece me up", "dancemusic",
+                    "INSTALLATION",
+                    "2021", "'WAVE' in collaboration with Fathia Mohidin",
+                    "2019", "For Dancemusic You’d Emit to Formless",
+                    "CONCERTS",
+                    "2015-2020", "Selected concerts",
+                    "PROJECTS",
+                    "2019-2021",
+                    "Selected projects",
                 ];
                 let text_body = [
                     "<strong>Durata:</strong> 35'  </br><strong>Format:</strong> 4.1</br><strong>Program note:</strong> Live coding live performance live conert. Along with my thesis 'The Live Concert as a Compositional Tool in Electro Acoustic Music' I have create tools for live compostion in SuperCollider. These tools were used in my degree concert at KMH on the 9th of September 2020. This was recorded and filmed. ",
@@ -139,7 +154,8 @@
                     "<strong>Durata:</strong> 7' 20  </br><strong>Format:</strong> 29.4</br><strong>Program note:</strong> Clap, woodblock, rhythm, space, bell, pattern, cluster.</br>Explore.",
                     "<strong>Durata:</strong> 10' </br><strong>Format:</strong> 6.0 </br>Exhibited at Luleå Biennalen",
                     "<strong>Durata:</strong> 35' </br><strong>Format:</strong> 4.0 </br>Ljudbänken for Stockholm Konst",
-                    "<strong>17.10.20</strong> Skaiv, Stockholm </br><strong>09.09.20</strong> degree concert, Royal college of music, Stockholm</br><strong>31.01.20</strong> Gelegenheiten Berlin, Berlin</br><strong>08.01.20</strong> Silent Green, Berlin</br><strong>25.07.19</strong> Norberg Festival, Norberg</br><strong>04.08.18</strong> Lidelsen, Nyköping</br><strong>28.07.18</strong> Technobastun PRIDË, Slakthuskyrkan, Stockholm</br><strong>07.06.18</strong> Live sessions, Trädgården, Stockholm</br><strong>02.02.18</strong> Johanneskyrkan goes Electronic, Malmö</br><strong>13.12.17</strong> Discover whats brewing, Debaser, Stockholm</br><strong>18.03.17</strong> 'comfort' release, Taverna Brillo, Stockholm</br><strong>14.01.17</strong> Acclimatize party, Moderna Museet, Stockholm</br><strong>07.10.16</strong> RISK, Fylkingen, Stockholm</br><strong>05.10.16</strong> Transmission, Cyklopen, Stockholm</br><strong>27.05.16</strong> Skogsfesten, Dals Långed</br><strong>05.05.16</strong> Rökridån, Stockholm</br><strong>11.12.15</strong> Liljevalchs, Stockholm</br><strong>03.12.15</strong> Från Ö till A, Stockholm</br><strong>08.08.15</strong> Lidelsen, Nyköping"
+                    "<strong>17.10.20</strong> Skaiv, Stockholm </br><strong>09.09.20</strong> degree concert, Royal college of music, Stockholm</br><strong>31.01.20</strong> Gelegenheiten Berlin, Berlin</br><strong>08.01.20</strong> Silent Green, Berlin</br><strong>25.07.19</strong> Norberg Festival, Norberg</br><strong>04.08.18</strong> Lidelsen, Nyköping</br><strong>28.07.18</strong> Technobastun PRIDË, Slakthuskyrkan, Stockholm</br><strong>07.06.18</strong> Live sessions, Trädgården, Stockholm</br><strong>02.02.18</strong> Johanneskyrkan goes Electronic, Malmö</br><strong>13.12.17</strong> Discover whats brewing, Debaser, Stockholm</br><strong>18.03.17</strong> 'comfort' release, Taverna Brillo, Stockholm</br><strong>14.01.17</strong> Acclimatize party, Moderna Museet, Stockholm</br><strong>07.10.16</strong> RISK, Fylkingen, Stockholm</br><strong>05.10.16</strong> Transmission, Cyklopen, Stockholm</br><strong>27.05.16</strong> Skogsfesten, Dals Långed</br><strong>05.05.16</strong> Rökridån, Stockholm</br><strong>11.12.15</strong> Liljevalchs, Stockholm</br><strong>03.12.15</strong> Från Ö till A, Stockholm</br><strong>08.08.15</strong> Lidelsen, Nyköping",
+                    "<strong> Chairperson of board Konstmusiksystrar</strong></br> Elected 11/2020</br><a href=http://konstmusiksystrar.se/ target='_blank'>http://konstmusiksystrar.se/</a></br></br><strong>Sound Pals - Collaborating at a distance</strong></br>Project manager together with Kajsa Antonsson, Konstmusiksystrar.</br></br><strong>Ljuva Brus/Invasiva Buller - Konstmusiksystrar at Rönnells Antikvariat</strong></br>Curator and creator together with Emilia Engblad Berangér, guest Åsa Stjerna.</br></br><strong>Electronic Art Music: Concert and Conversation</strong></br>Workshop at Royal Collego of Music in collaboration with Vem Kan Bli Producent and Upfront Producer Network. Initiator and host."
                 ];
 
                 box.className = "box";
@@ -163,6 +179,7 @@
                         box.appendChild(head);
                     } else {
                         body.className = "text-body";
+                        body.style.textAlign = "left";
                         body.innerHTML = text_body[counter_text]  + "</br></br>";
                         box.appendChild(title);
                         box.appendChild(body);
