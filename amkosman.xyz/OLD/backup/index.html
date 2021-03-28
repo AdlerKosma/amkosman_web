@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AMKosman</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300i" rel="stylesheet">
+    <link rel="icon" href="assets/lily.png">
+</head>
+
+<body>
+    <div class="main"></div>
+    <div class="bg-mob">
+        <script language="JavaScript">
+            function random_imglink() {
+                var myimages = new Array()
+
+                myimages[1] = "img/1.png"
+                myimages[2] = "img/2.png"
+                myimages[3] = "img/3.png"
+                myimages[4] = "img/4.png"
+                myimages[5] = "img/5.png"
+
+                var ry = Math.floor(Math.random() * myimages.length)
+                if (ry == 0)
+                  ry = 1
+                document.write('<img src="' + myimages[ry] + '" border=0>')
+            }
+            random_imglink()
+        </script>
+    </div>
+
+    <div class="menu1"></div>
+
+
+
+    <!--LOGO
+    <div class="logo">
+        <img src="img/logo1.png">
+    </div> -->
+
+    <!-- About
+    <div class="slide1">
+    </div> -->
+
+    <script id="music1" type="text/html">
+      <iframe width="100%" height="380" scrolling="yes" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1007202430&color=%23ff0000&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+    </script>
+    <script id="music2" type="text/html">
+      <iframe width="100%" height="310" scrolling="yes" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1007199991&color=%23ff0000&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+    </script>
+    <script id="music3" type="text/html">
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/307207034&color=%23ff0000&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+    </script>
+    <script id="music4" type="text/html">
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269042734&color=%23ff0000&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+    </script>
+
+    <!--<iframe width="50%" height="300px" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1007202430&color=%23ff0000&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+      <a href="https://soundcloud.com/amkosman" title="AMKosman" target="_blank" style="color: #cccccc; text-decoration: none;">AMKosman</a>
+      <a href="https://soundcloud.com/amkosman/sets/amkosman-volvm-1-turbulence" title="AMKosman – VOLVM 1. turbulence" target="_blank" style="color: #cccccc; text-decoration: none;">AMKosman – VOLVM 1. turbulence</a>
+    </div> -->
+
+    <div class="video-background">
+        <div class="video-foreground">
+            <video id="myvideo" width="100%" height="100%" autobuffer autoplay loop muted>
+                <source src="video.mp4" type="video/mp4">
+                <source src="video.ogv.html" type="video/ogg">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+    <!-- <video id="videoBG" poster="poster.JPG" width="100%" height="100%" autoplay muted loop>
+      <source src="video.mp4" type="video/mp4">
+      <source src="video.ogv.html" type="video/ogg">
+    </video> -->
+
+
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="js/marquee3k.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+          Marquee3k({});
+        });
+    </script>
+    <!--
+    <script>
+        $(function() {
+          $('.about-link').on('click', function() {
+            $('.slide1').toggleClass('toggle');
+          });
+        });
+
+        $(function() {
+          $('.about-link').on('click', function() {
+            $('.slide1').toggleClass('toggle');
+          });
+        });
+    </script>-->
+
+</body>
+
+</html>
